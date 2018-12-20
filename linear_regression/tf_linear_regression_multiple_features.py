@@ -3,7 +3,7 @@
 -------------------------------------------------
    File Name：     tf_linear_regression
    Description :   use linear regression to calculate the relationship between the number of fires and thefts in a neighborhood.
-   Author :        Tingur
+   Author :        Yalye
    date：          2018/10/21
 -------------------------------------------------
 """
@@ -11,7 +11,6 @@
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
-import xlrd
 
 learning_reate = 0.001
 training_epochs = 10000

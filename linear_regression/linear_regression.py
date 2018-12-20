@@ -8,7 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 -------------------------------------------------
    File Name：     linear_regression
    Description :
-   Author :        Tingur
+   Author :        Yalye
    date：          2018/11/11
 -------------------------------------------------
 """
@@ -53,7 +53,7 @@ for i in range(num_iters):
 
 print('theta is ',theta)
 plt.plot(J_history)
-# plt.show()
+plt.show()
 
 # predict house price
 test_square = 1600

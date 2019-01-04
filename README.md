@@ -1,2 +1,2 @@
 # SharpMachineLearning
-Introduction of MachineLearning
+Introduction of MachineLearning. Just to Stay Sharp.

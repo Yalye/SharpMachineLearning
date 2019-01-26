@@ -26,6 +26,27 @@ $$
 $$
 so, the beta distribution is normalized.
 
+### Beta distribution's mean is $\frac { a } { a + b }$
+verification:
+
+$$
+\begin{aligned}\mathrm {E}[X] &= \int_{-\infty}^{\infty}\mu\operatorname{Beta}(\mu|a,b)d\mu \\ &= \int_{-\infty}^{\infty}\mu \frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) }\mu ^ { a - 1 } ( 1 - \mu ) ^ { b - 1 }d\mu \\&=\frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) }\int_{0}^{1} \mu^{(a + 1 -1)}(1-\mu)^{b-1}d\mu \\&= \frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) } \frac { \Gamma ( a + 1) \Gamma ( b ) }{ \Gamma ( a + b + 1) } \int_{0}^{1}\operatorname {Beta}(\mu|a+1,b)d\mu\\&=\frac { \Gamma ( a + b )\Gamma ( a + 1 ) }{\Gamma ( a )\Gamma ( a + b + 1)}\\&=\frac{a}{a+b}
+\end{aligned}
+$$
+### Beta distribution's variance is $\frac { a b } { ( a + b ) ^ { 2 } ( a + b + 1 ) }$
+verification:
+
+$$
+\begin{aligned}\mathrm {E}[X^{2}] &= \int_{-\infty}^{\infty}\mu^{2}\operatorname{Beta}(\mu|a,b)d\mu \\ &= \int_{-\infty}^{\infty}\mu^{2} \frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) }\mu ^ { a - 1 } ( 1 - \mu ) ^ { b - 1 }d\mu\\&=\frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) }\int_{0}^{1} \mu^{(a + 2 -1)}(1-\mu)^{b-1}d\mu \\&=\frac { \Gamma ( a + b ) } { \Gamma ( a ) \Gamma ( b ) } \frac { \Gamma ( a + 2) \Gamma ( b ) }{ \Gamma ( a + b + 2) } \\&=\frac{(a+1)a}{(a+b+1)(a+b)}\end{aligned}
+$$
+
+$$
+\begin{aligned}{\mathrm {E}[X]}^{2} &= {\left(\frac{a}{a+b}\right)}^2 \end{aligned}
+$$
+
+$$
+\begin{aligned} \mathrm Var[X] &= \mathrm {E}[X^{2}] - {\mathrm {E}[X]}^{2} \\&=\frac { a b } { ( a + b ) ^ { 2 } ( a + b + 1 ) }\end{aligned}
+$$
 
 ### Ref
 https://stats.stackexchange.com/questions/47771/what-is-the-intuition-behind-beta-distribution <br>
